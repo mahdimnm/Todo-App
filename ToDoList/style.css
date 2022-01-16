@@ -1,0 +1,222 @@
+* {
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+body {
+  background-image: linear-gradient(to right, #bdc3c7, #2c3e50);
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(to right, #141d2f, #243b55);
+  box-shadow: 3px 3px 6px black;
+  border-radius: 10px;
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+}
+
+textarea {
+  resize: none;
+}
+
+/* style for nav section --------------------------------------------*/
+.header-container {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  border-left: 1px solid black;
+  background-color: rgba(20, 29, 47, 0.5);
+}
+
+.btn-header {
+  padding: 30px 10px;
+  text-align: center;
+  background-color: rgba(20, 29, 47, 0.5);
+  border: 0;
+  color: #bdc3c7;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.btn-header:hover {
+  background-color: #bdc3c7;
+  color: rgb(19, 19, 19);
+}
+
+/* style for form section --------------------------------------------*/
+.todo-form-container {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  position: relative;
+}
+
+.inputText {
+  width: 80%;
+  height: 50px;
+  padding: 0 10px;
+  margin: 90px auto 0 auto;
+  border-radius: 5px;
+  background-color: #bdc3c7;
+  border: 0;
+  transition: all 0.5s;
+}
+
+.inputText:nth-last-child(2) {
+  height: 80px;
+  margin-top: 80px;
+}
+
+.inputText:focus {
+  border: 0;
+  outline: 0;
+  background-color: #fff;
+}
+
+.confirm-btn {
+  text-align: center;
+  padding: 10px;
+  width: 50%;
+  margin: 0;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  background-color: #bdc3c7;
+  transition: all 0.5s;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.confirm-btn:hover {
+  background-color: #fff;
+}
+
+/* style for todo list card --------------------------------------------*/
+.todo-list-container {
+  width: 75%;
+  display: flex;
+  background-color: transparent;
+  flex-direction: column;
+  position: relative;
+  word-wrap: break-word;
+  overflow: auto;
+}
+
+.todo-list-cards {
+  width: 80%;
+  height: 50%;
+  margin: 20px auto 0 auto;
+  background-color: #bdc3c7;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px black;
+  color: rgb(19, 19, 19);
+  padding-top: 20px;
+}
+
+.subject {
+  margin: 5px 10px 0 0;
+}
+
+.time {
+  margin: 5px 10px 0 0;
+  color: rgb(148, 144, 144);
+}
+
+.description {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.done-sign {
+  position: absolute;
+  font-size: 20px;
+  top: 2px;
+  left: 10px;
+  cursor: pointer;
+}
+
+.delete-sign {
+  position: absolute;
+  font-size: 20px;
+  top: 3px;
+  left: 40px;
+  cursor: pointer;
+}
+
+.edit-sign {
+  position: absolute;
+  font-size: 20px;
+  top: 0px;
+  left: 70px;
+  cursor: pointer;
+}
+
+/* basic style --------------------------------------------*/
+.medium-font {
+  font-size: 1.25rem;
+}
+
+.small-font {
+  font-size: 0.75rem;
+}
+
+.medium-font {
+  font-size: 1rem;
+}
+
+.large-font {
+  font-size: 1.5rem;
+}
+
+.hide {
+  display: none;
+}
+
+.done {
+  background-color: rgb(35, 126, 35);
+  color: #bdc3c7;
+}
+
+.active {
+  background-color: #bdc3c7;
+  color: rgb(19, 19, 19);
+}
+
+/* making this responsive  --------------------------------------------*/
+@media screen and (max-width: 700px) {
+  main {
+    flex-direction: column;
+  }
+  .header-container {
+    flex-direction: row;
+    width: 100%;
+  }
+  .btn-header {
+    width: 33%;
+  }
+  .todo-form-container {
+    width: 100%;
+    height: 100%;
+  }
+  .confirm-btn {
+    top: 80%;
+  }
+  .todo-list-container {
+    height: 100%;
+    width: 100%;
+  }
+  .todo-list-cards {
+    width: 90%;
+    height: 75%;
+  }
+}

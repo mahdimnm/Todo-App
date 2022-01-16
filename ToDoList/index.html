@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body dir="rtl">
+    <main>
+      <div class="header-container">
+        <button class="btn-header active">ایجاد کار</button>
+        <button class="btn-header">لیست کارها</button>
+        <button class="btn-header hide">ویرایش کار</button>
+      </div>
+
+      <form class="todo-form-container">
+        <input
+          type="text"
+          placeholder="عنوان کار..."
+          class="inputText"
+          maxlength="120"
+        />
+        <textarea
+          placeholder="توضیحات کار"
+          maxlength="250"
+          class="inputText"
+        ></textarea>
+        <button class="confirm-btn">ایجاد</button>
+      </form>
+
+      <div class="todo-list-container hide"></div>
+
+      <form class="todo-form-container hide">
+        <input
+          type="text"
+          placeholder="عنوان کار..."
+          class="inputText"
+          maxlength="120"
+        />
+        <textarea
+          placeholder="توضیحات کار"
+          maxlength="250"
+          class="inputText"
+        ></textarea>
+        <button class="confirm-btn">ویرایش کار</button>
+      </form>
+    </main>
+  </body>
+  <script src="./script.js"></script>
+</html>
